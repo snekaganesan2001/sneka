@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>joy construction website</title>
+
+        <!--font awesopme link-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!--css link-->
+        <link rel="stylesheet" href="construction.css">
+
+        <!--sweiper link css-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    </head>
+    <body>
+        <section>
+            <header>
+                <div class="logo"><img src="images/logo.png" alt=""> </div>
+                <nav class="navbar">
+                    <a href="construction.html">home</a>
+                    <a href="about.html">About</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="conatct.html" class="active">Contact</a>
+                </nav>
+                <div class="myicons">
+                    <div id="menu-bar" class="fa fa-bars"></div>
+                    <div id="search" class="fa fa-search"></div>
+                </div>
+                <div id="searchform" class="search-form">
+                    <input type="search">
+                </div>
+            </header>
+        </section>
+        <div class="cnt-image">
+            <img src="images/pexels-pixabay-290595.jpg" width="1500">
+            <div class="page-title">
+                <h1>Contact</h1>
+                <p>We know the secret of your success</p>
+            </div>
+        </div>
+        <div class="container">
+            <h1>contact us</h1>
+        <div class="form">
+          <form method="post">
+            <input type="text" placeholder="Name" id="name" autocomplete="off">
+            <input type="email" placeholder="Email" id="email" autocomplete="off">
+            <input type="text" placeholder="Subject" id="subject" autocomplete="off">
+            <textarea id="message" name="message" placeholder="message" cols="30" rows="10"></textarea>
+            <button id="btn">send</button>
+          </form>  
+          <div class="map" style="min-height: 400px;">
+    
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.91345134301!2d80.24277321360422!3d13.04118081687911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52664ddf3b611b%3A0x512fb404167e55d9!2s24%2F1%2C%20Raman%20St%2C%20Parthasarathi%20Puram%2C%20T.%20Nagar%2C%20Chennai%2C%20Tamil%20Nadu%20600017!5e0!3m2!1sen!2sin!4v1657412572939!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+        </div>
+       
+        </div>
+        </div>
+        <div class="cnt-image2">
+          <img src="images/map.jpg">
+        </div>
+        
+
+
+
+
+        <script src="https://smtpjs.com/v3/smtp.js">
+        </script>
+        <script>
+            var btn=document.getElementById('btn');
+            btn.addEventListener('click',function(e){
+                e.preventDefault()
+                var name=document.getElementById('name').value;
+                var email=document.getElementById('email').value;
+                var subject=document.getElementById('subject').value;
+                var message=document.getElementById('message').value;
+                var body='name: '+name+'<br/>email: '+email+'<br/>subject: '+subject+'<br/>message: '+message;
+
+                Email.send({
+    SecureToken : "bd4a21f5-9449-46fc-a3a4-2d963a14c8cf",
+    To : 'snekaganesan19@gmail.com',
+    From : "snekaganesan69@gmail.com",
+    Subject : "contact message",
+    Body : body
+}).then(
+  message => alert(message)
+);
+            })
+        </script>
+
+
+
+<!--fo0ter section-->
+<div class="footer">
+  <div class="main-footer">
+    <div class="footer-inner-content">
+      <h2>Our office</h2>
+      <p> joy construction
+        No.199, Raahat Plaza, 2nd floor,
+        Arcot road,
+        Vadapalani, Chennai-600 026
+        9360841462
+        012-647
+      </p>
+    </div>
+
+    <div class="footer-inner-content">
+      <h2>Social media</h2>
+      <a href="https://www.instagram.com/sneka_ganesan_/" target="_blank">
+        <i class="fa fa-facebook-square"></i>
+    </a>
+    <a href="https://www.instagram.com/sneka_ganesan_/" target="_blank">
+      <i class="fa fa-instagram"></i>
+  </a>
+  <a href="https://www.instagram.com/sneka_ganesan_/" target="_blank">
+    <i class="fa fa-pinterest"></i>
+</a>
+
+    </div>
+    
+
+    <div class="footer-inner-content">
+      <h2>Office hours</h2>
+      <p>Monday to saturday- 10.00AM - 9.00PM</p>
+      <p>Sunday - Off</p>
+    </div>
+
+    <div class="footer-inner-content">
+      <h2>Main project</h2>
+        <div class="main-project">
+
+          <div class="inner-projects">
+            <div class="project-image">
+              <img src="images/feature4.jpg" alt="">
+            </div>
+            <div class="project-content">
+              <p class="project-content-p">3BHK apartment, ambattur</p>
+            </div>
+          </div>
+
+          <div class="inner-projects">
+            <div class="project-image">
+              <img src="images/feature4.jpg" alt="">
+            </div>
+            <div class="project-content">
+              <p class="project-content-p">apartment 10floor,Ecr</p>
+            </div>
+          </div>
+
+          <div class="inner-projects">
+            <div class="project-image">
+              <img src="images/feature4.jpg" alt="">
+            </div>
+            <div class="project-content">
+              <p class="project-content-p">Resorts,thiruvamyur</p>
+            </div>
+          </div>
+
+        </div>
+    </div>
+
+  </div>
+</div>
+    
+
+
+
+  </body>
+
+
+    </body>
+</html>
+    
